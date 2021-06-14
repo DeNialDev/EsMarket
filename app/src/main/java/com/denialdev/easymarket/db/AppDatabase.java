@@ -1,4 +1,4 @@
-package com.denialdev.shoppinglist.db;
+package com.denialdev.easymarket.db;
 
 import android.content.Context;
 
@@ -9,7 +9,7 @@ import androidx.room.RoomDatabase;
 @Database(entities =  {Category.class, Items.class}, version = 1)
 public abstract class  AppDatabase extends RoomDatabase {
 
-    public abstract  ShoppingListDao shoppingListDao();
+    public abstract  EasyMarket easyMarket();
 
     public static AppDatabase INSTANCE;
 

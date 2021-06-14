@@ -1,4 +1,4 @@
-package com.denialdev.shoppinglist.db;
+package com.denialdev.easymarket.db;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
@@ -9,7 +9,7 @@ import androidx.room.Update;
 import java.util.List;
 
 @Dao
-public interface ShoppingListDao {
+public interface EasyMarket {
 
     @Query("Select * from Category")
     List<Category> getAllCategoriesList();

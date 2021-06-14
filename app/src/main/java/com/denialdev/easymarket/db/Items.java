@@ -1,4 +1,4 @@
-package com.denialdev.shoppinglist.db;
+package com.denialdev.easymarket.db;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.denialdev.shoppinglist">
+    package="com.denialdev.easymarket">
 
     <application
         android:allowBackup="true"
@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ShoppingList">
-        <activity android:name=".Map"></activity>
-        <activity android:name=".Product"></activity>
-        <activity android:name=".ShowItemsListActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name="com.denialdev.easymarket.Map"></activity>
+        <activity android:name="com.denialdev.easymarket.Product"></activity>
+        <activity android:name="com.denialdev.easymarket.ShowItemsListActivity" />
+        <activity android:name="com.denialdev.easymarket.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,7 +20,7 @@
             </intent-filter>
             >
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.denialdev.easymarket.MainActivity" />
     </application>
 
 </manifest>

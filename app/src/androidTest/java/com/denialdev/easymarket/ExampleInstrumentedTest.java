@@ -1,4 +1,4 @@
-package com.denialdev.shoppinglist;
+package com.denialdev.easymarket;
 
 import android.content.Context;
 

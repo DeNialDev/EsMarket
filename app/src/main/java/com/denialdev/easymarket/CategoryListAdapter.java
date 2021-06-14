@@ -1,4 +1,4 @@
-package com.denialdev.shoppinglist;
+package com.denialdev.easymarket;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.denialdev.shoppinglist.db.Category;
+import com.denialdev.easymarket.db.Category;
 
 import java.util.List;
 

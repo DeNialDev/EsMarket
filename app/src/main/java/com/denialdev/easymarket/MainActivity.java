@@ -1,4 +1,4 @@
-package com.denialdev.shoppinglist;
+package com.denialdev.easymarket;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,8 +19,8 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.denialdev.shoppinglist.db.Category;
-import com.denialdev.shoppinglist.viewmodel.MainActivityViewModel;
+import com.denialdev.easymarket.db.Category;
+import com.denialdev.easymarket.viewmodel.MainActivityViewModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.List;

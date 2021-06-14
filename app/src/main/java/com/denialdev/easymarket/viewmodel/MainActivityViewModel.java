@@ -1,12 +1,12 @@
-package com.denialdev.shoppinglist.viewmodel;
+package com.denialdev.easymarket.viewmodel;
 
 import android.app.Application;
 
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
 
-import com.denialdev.shoppinglist.db.AppDatabase;
-import com.denialdev.shoppinglist.db.Category;
+import com.denialdev.easymarket.db.AppDatabase;
+import com.denialdev.easymarket.db.Category;
 
 import java.util.List;
 
@@ -27,7 +27,7 @@ public class MainActivityViewModel extends AndroidViewModel {
     }
 
     public void getAllCategoryList() {
-        List<Category> categoryList=  appDatabase.shoppingListDao().getAllCategoriesList();
+        List<Category> categoryList=  appDatabase.easyMarket().getAllCategoriesList();
         if(categoryList.size() > 0)
         {
             listOfCategory.postValue(categoryList);
@@ -39,17 +39,17 @@ public class MainActivityViewModel extends AndroidViewModel {
     public void insertCategory(String catName) {
         Category category = new Category();
         category.categoryName = catName;
-        appDatabase.shoppingListDao().insertCategory(category);
+        appDatabase.easyMarket().insertCategory(category);
         getAllCategoryList();
     }
 
     public void updateCategory(Category category) {
-        appDatabase.shoppingListDao().updateCategory(category);
+        appDatabase.easyMarket().updateCategory(category);
         getAllCategoryList();
     }
 
     public void deleteCategory(Category category) {
-        appDatabase.shoppingListDao().deleteCategory(category);
+        appDatabase.easyMarket().deleteCategory(category);
         getAllCategoryList();
     }
 
